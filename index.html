@@ -9,163 +9,322 @@
         margin: 0;
         padding: 0;
         font-family: helvetica, arial;
-        background-color:#80af54;
       }
-      h1 {
-        color: white;
-        font-size: 7vw;
-        text-align: center;
-        margin: 2.5% 0 0;
-      }
-      a {
-        color: white;
-      }
+
       .header {
-        background-color: #80af54;
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-      .item {
-        display: inline-block;
-        color: #38571e;
-        margin: 0 0;
-      }
-      .nav {
-        background-color: #38571e;
-        text-align: center;
-        font-size: 2vw;
-        margin: 0 20%;
-        border-radius: 100px;
-      }
-      .main{
-        margin-top: 20%;
-      }
-      .content {
-        background-color: white;
-        text-align: center;
-        margin: 0 15%;
-        border-radius: 20px;
         display: block;
+        position: fixed;
+        border-bottom: .25vw solid #80af54;
+        width: 100%;
+        text-align: center;
+        color: #38571e;
         clear: both;
-        position: static;
+        background-color: white;
       }
+
+      .home {
+        display: inline-block;
+        width: 100%;
+        margin-top: 120px;
+        padding-bottom: 35px;
+        text-align: center;
+        color: #38571e;
+        font-size: 3vw;
+        font-weight: bold;
+        border-bottom: .25vw solid #80af54;
+      }
+
       .menu {
-        color: black;
-        margin: auto;
-        padding: 0 5% 5% 5%;
-        list-style-type: none;
+        text-align: center;
+        color: #38571e;
+        border-bottom: .25vw solid #80af54;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
       }
-      .menu li{
-        margin: 2%;
+
+      .menu h1{
+        display: block;
+        padding-bottom: 3vw;
       }
-      h2{
-        margin: 5%;
-        padding-top: 5%;
+
+      .item{
+        display: inline-block;
+        width: 35vw;
+        height: 35vw;
+        margin: 3vw;
+        border: .4vw solid #80af54;
+        overflow-y: scroll;
+        font-size: 2vw;
       }
-      img {
-        border-radius: 20px;
+
+      .name {
+        font-size: 2.25vw;
+        font-weight: bold;
+        display: block;
+        width: 100%;
+        border-bottom: .5vw solid  #38571e;
+        padding-bottom: 15px;
+        clear: both;
       }
+
+      .details {
+        font-size: 2vw;
+        display: inline-block;
+        text-align: left;
+        float: left;
+        padding-left: 15px;
+      }
+
+      .prices {
+        font-size: 2vw;
+        display: inline-block;
+        float: right;
+        text-align: right;
+        padding-right: 15px;
+      }
+
+      .food {
+        width: 90%;
+        object-fit: contain;
+        margin-top: 5px;
+      }
+
+      .order {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        color: #38571e;
+        font-size: 2vw;
+        font-weight: bold;
+        border-bottom: 2px solid #80af54;
+        padding-top: 15px;
+      }
+
+      .social-list {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+      .social-list > li {
+        display: inline-block;
+        margin: 0 0.5em;
+      }
+
+      .social-link {
+        border-radius: 99px;
+        border: 3px solid #80af54;
+        box-sizing: border-box;
+        display: inline-block;
+        height: 3.5em;
+        padding-top: 0.60em;
+        vertical-align: middle;
+        width: 3.5em;
+      }
+
+      .link {
+        height: 75%;
+      }
+
       </style>
   </head>
+
   <body>
-  <div class="header">
-    <h1> Tati's Kitchen </h1>
 
-    <div class="nav">
-      <ul>
-        <li class="item">
-          Home
-        </li>
-        <li class="item">
-          Menu
-        </li>
-        <li class="item">
-          Order
-        </li>
-      </ul>
+    <div class="header">
+      <h1> Tati's Kitchen </h1>
     </div>
-  </div>
 
-  <div class="main">
-  <div class="content">
+    <div class="home">
+      <p>
+        Home-made food brings memories of love, family and friends. <br/>
+        Our goal is to share them with you.
+      </p>
+    </div>
 
-    <h2>About Tati's Kitchen</h2>
+    <div class="menu">
+      <h1>Menu</h1>
+      <div class="item">
 
-    <p>
-      Home-made food brings memories of love, family and friends. My goal is to share them with you.<br/><br/><br/>
+        <p class="name">
+          Seco de Pollo
+        </p>
+
+        <p class="details">
+          Drumstick & Thigh<br/>
+          Split Breast<br/>
+        </p>
+
+        <p class="prices">
+          $7.50<br/>
+          $9.50 <br/>
+        </p>
+
+        <img class="food" src="images/seco.jpg">
+      </div>
+
+      <div class="item">
+        <p class="name">
+          Tamales (Chicken or Veggie)
+        </p>
+
+        <p class="details">
+          Half-Dozen<br/>
+          Dozen<br/>
+        </p>
+
+        <p class="prices">
+          $30<br/>
+          $55<br/>
+        </p>
+
+        <img class="food" src="images/ayaout.png">
+        <img class="food" src="images/ayain.png">
+
+        <p class="name">
+          <br/>
+          Family Size
+        </p>
+        <p class="details">
+          Serves 6<br/>
+          Serves 12<br/>
+        </p>
+
+        <p class="prices">
+          $30<br/>
+          $55<br/>
+        </p>
+
+        <img class="food" src="images/fams.jpeg">
+        <img class="food" src="images/famt.png">
+
+      </div>
+
+      <div class="item">
+
+        <p class="name">
+          Chicken Lasagna
+        </p>
+
+        <p class="details">
+          2.5 Lbs (serves 2-4)<br/>
+          5.0 Lbs (serves 4-6)<br/>
+        </p>
+
+        <p class="prices">
+          $16<br/>
+          $32 <br/>
+        </p>
+
+        <img class="food" src="images/lasagna.png">
+      </div>
+
+      <div class="item">
+
+        <p class="name">
+          Tortitas de Verde con Queso
+        </p>
+
+        <p class="details">
+          Half-Dozen<br/>
+          Dozen<br/>
+        </p>
+
+        <p class="prices">
+          $9<br/>
+          $18<br/>
+        </p>
+
+        <img class="food" src="images/torver.png">
+      </div>
+
+      <div class="item">
+
+        <p class="name">
+          Arroz con Leche
+        </p>
+
+        <p class="details">
+          Single 4 oz.<br/>
+          Dozen<br/>
+        </p>
+
+        <p class="prices">
+          $2.15<br/>
+          $24.00<br/>
+        </p>
+
+        <img class="food" src="images/arroz.jpg">
+      </div>
+
+      <div class="item">
+
+        <p class="name">
+          Rice with Picadillo and Black Beans
+        </p>
+
+        <p class="details">
+          Single 4 oz.<br/>
+          Dozen<br/>
+        </p>
+
+        <p class="prices">
+          $2.15<br/>
+          $24.00<br/>
+        </p>
+
+      </div>
+
+      <div class="item">
+      <p class="name">
+        Imperial Rice
+      </p>
+
+      <p class="details">
+        2.5 Lbs (serves 2-4)<br/>
+        5.0 Lbs (serves 4-6)<br/>
+      </p>
+
+      <p class="prices">
+        $16<br/>
+        $32 <br/>
+      </p>
+    </div>
+
+    <div class="item">
+    <p class="name">
+      Fried Plantains
+    </p>
+
+    <p class="details">
+      1 (3 units)<br/>
+
+    </p>
+
+    <p class="prices">
+      $1.50<br/>
     </p>
   </div>
 
-  <div class="content">
+    </div>
 
-    <ul class="menu">
+    <div class="order">
+      <p>
+        To place your order call or
+        message (984)999-1395 by Sunday.<br/><br/>
+        Your order will be ready for pickup on the day of your choice: Tuesday, Wednesday, or Thursday. <br/><br/>
+      </p>
+
+      <div>
+        <ul class="social-list">
+          <li>
+            <a href="https://www.facebook.com/tatiskitchen.net"target="_blank" class="social-link"><img src="images/fb.png" class="link"></a>
+          </li>
+          <li>
+            <a href="https://www.tatis.kitchen.clt.nc/" target="_blank" class="social-link"><img src="images/insta.png" class="link"></a>
+          </li>
+        </ul>
+      </div>
       <br/>
-      <li>
-        <strong>Seco de Pollo con Arroz - Stewed Chicken and Yellow Rice</strong> <br/><br/>
-        Pierna/Cadera - Drumstick/Thigh $7.50<br/>
-        Pechuga - Split Breast $9.50 <br/><br/>
-          <img src="images/seco.jpg" height="200px">
-      </li>
-      <li>
-        <strong>Arroz con Picadillo y Frejoles Negros - Rice with Picadillo and Black Beans
-        </strong> <br/><br/>
-        Per Person $7.50 <br/><br/>
-      </li>
-      <li>
-        <strong>Hayacas de Pollo o Vegetales - Chicken  or Veggie Tamales </strong> <br/><br/>
-        6 for    $30.00 <br/>
-        12 for       $55.00 <br/><br/>
-          <img src="images/ayain.png" height="200px">
-          <img src="images/ayaout.png" height="200px">
-      </li>
-      <li>
-        <strong>Hayaca Familia de Pollo, Vegetariana o Mixta - Family Size Chicken or Veggie Tamales
-        </strong> <br/><br/>
-        6 for    $30.00 <br/>
-        12 for       $55.00 <br/><br/>
-      </li>
-      <li>
-        <strong> Lasagna de Pollo - Chicken Lasagna  </strong> <br/><br/>
-        2.5 Lb Portion (serves 2-4) $16 <br/>
-        5.0 Lb portion (serves 4-6) $32 <br/><br/>
-          <img src="images/lasagna.png" height="200px">
-      </li>
-      <li>
-        <strong>Tortitas de Verde con Queso - Green Plantain Patties with Cheese </strong> <br/><br/>
-        6 for $9 <br/>
-        12 for $18.00 <br/><br/>
-          <img src="images/torver.png" height="200px">
-      </li>
-      <li>
-        <strong> Arros Imperial - Imperial Rice  </strong> <br/><br/>
-        2.5 Lb Portion (serves 2-4) $16 <br/>
-        5.0 Lb portion (serves 4-6) $32 <br/><br/>
-      </li>
-      <li>
-        <strong>Maduros Fritos - Fried Plantains</strong> <br/><br/>
-        3 per portion $1.5   <br/><br/>
-      </li>
-      <li>
-        <strong> Arros con Leche - Rice Pudding  </strong> <br/><br/>
-        Per 4 oz. portion   $2.15 <br/>
-        12 - 4oz portions  $24.00 <br/><br/>
-          <img src="images/arroz.jpg" height="200px">
-      </li>
-  </ul>
+    </div>
 
-  </div>
-
-  <div class="content">
-
-    <h2>To Order</h2>
-
-    <p>
-      To place your order for pickup on Tuesday, Wednesday or Thursday, call or
-       message 984-999-1395, the latest, by Sunday.<br/><br/>
-      Follow us on Instagram tatis.kitchen.clt.nc and on Facebook at Tati's Kitchen.
-      <br/><br/><br/>
-    </p>
-  </div>
-  </div>
   </body>
